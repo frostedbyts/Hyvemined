@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "Hyvemined.Playbooks": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5241;https://localhost:7241",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
