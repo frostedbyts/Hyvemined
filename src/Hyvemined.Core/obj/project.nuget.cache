@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "63xN0nKHHcLpgyRdlTyJaSA+rh+4Sz3wNdnaCFXOQRgHf3lw88ukb9iBCxxW6GRXTBiYRcdKBpyiDVSEfiWulg==",
+  "success": true,
+  "projectFilePath": "/home/turner/Projects/Hyvemined/src/Hyvemined.Core/Hyvemined.Core.csproj",
+  "expectedPackageFiles": [
+    "/home/turner/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/home/turner/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/home/turner/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/home/turner/.nuget/packages/system.text.json/7.0.3/system.text.json.7.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
