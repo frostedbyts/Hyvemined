@@ -1,7 +1,7 @@
 using Hyvemined.Core.Models.Enums;
 namespace Hyvemined.Core.Models.InternalApi
 {
-    public class IntelReport
+    public class IocReport
     {
         public Guid ReportId { get; set; }
 
