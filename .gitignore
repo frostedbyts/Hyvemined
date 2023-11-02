@@ -475,3 +475,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# various configs
+*.[Pp][Rr][Oo][Dd][Uu][Cc][Tt][Ii][Oo][Nn].json
+*.[Dd][Ee][Vv][Ee][Ll][Oo][Pp][Mm][Ee][Nn][Tt].json

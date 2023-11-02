@@ -1,10 +1,11 @@
 using Hyvemined.Core.Models.Enums;
+using Hyvemined.Core.Models.ExternalFeed;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 namespace Hyvemined.Core.Models.InternalApi
 {
-    public class IocReport
+    public class IocReport<T> where T : IExternalIocReport
     {
         [JsonPropertyName("report_id")]
         public Guid ReportId { get; set; }
@@ -12,8 +13,8 @@ namespace Hyvemined.Core.Models.InternalApi
         public string Feed { get; set; } = string.Empty;
         [JsonPropertyName("ioc")]
         public string Ioc { get; set; } = string.Empty;
-        [JsonPropertyName("type")]
-        public IocType Type { get; set; }
+        [JsonPropertyName("ioc_type")]
+        public IocType IocType { get; set; }
         [JsonPropertyName("created")]
         public DateTimeOffset Created { get; set; }
         [JsonPropertyName("last_updated")]
@@ -24,5 +25,12 @@ namespace Hyvemined.Core.Models.InternalApi
         public List<IocReportField> ExtractedFields { get; set; } = new List<IocReportField>();
         [JsonPropertyName("computed_fields")]
         public List<IocReportField> ComputedFields { get; set; } = new List<IocReportField>();
+        [JsonPropertyName("raw_report")]
+        public IExternalIocReport? RawReport { get; set; }
+
+        public IocReport()
+        {
+            ReportId = Guid.NewGuid();
+        }
     }
 }
