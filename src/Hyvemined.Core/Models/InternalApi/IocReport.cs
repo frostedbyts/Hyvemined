@@ -41,6 +41,12 @@ namespace Hyvemined.Core.Models.InternalApi
         public bool IncludeComments { get; set; } = false;
         [JsonPropertyName("comments")]
         public List<UserComment>? Comments { get; set; }
+        [JsonPropertyName("include_changelog")]
+        public bool IncludeChangelog { get; set; }
+        [JsonPropertyName("changelog")]
+        public List<ChangelogEntry>? Changelog { get; set; }
+        [JsonPropertyName("include_raw_report")]
+        public bool IncludeRawReport { get; set; }
         [JsonPropertyName("raw_report")]
         public Dictionary<string, JsonElement>? RawReport { get; set; }
 

@@ -8,7 +8,7 @@ namespace Hyvemined.Core.Models.InternalApi
         public string? Name { get; set; }
         [JsonPropertyName("value")]
         public string? Value { get; set; }
-        [JsonPropertyName("field_tpes")]
+        [JsonPropertyName("field_type")]
         public ReportFieldType FieldType { get; set; }
     }
 }

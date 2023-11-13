@@ -7,8 +7,10 @@ namespace Hyvemined.Core.Models.Enums
         URL,
         DOMAIN,
         EMAIL,
-        SHA128,
+        SHA1,
         SHA256,
-        SHA512
+        SHA512,
+        MD5,
+        INVALID
     }
 }

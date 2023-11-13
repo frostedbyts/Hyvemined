@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyvemined.Core", "Hyvemined.Core\Hyvemined.Core.csproj", "{1F4AF7C5-62DB-4251-9B95-921413EEE099}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyvemined.Server", "Hyvemined.Server\Hyvemined.Server.csproj", "{9CE12267-253A-4E32-8933-1B01CDA96F61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1F4AF7C5-62DB-4251-9B95-921413EEE099}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F4AF7C5-62DB-4251-9B95-921413EEE099}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F4AF7C5-62DB-4251-9B95-921413EEE099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE12267-253A-4E32-8933-1B01CDA96F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE12267-253A-4E32-8933-1B01CDA96F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE12267-253A-4E32-8933-1B01CDA96F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE12267-253A-4E32-8933-1B01CDA96F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

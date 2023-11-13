@@ -16,5 +16,14 @@ namespace Hyvemined.Core.Models.InternalApi
         public DateTimeOffset Created { get; set; }
         [JsonPropertyName("updated")]
         public DateTimeOffset Updated { get; set; }
+        [JsonPropertyName("include_changelog")]
+        public bool IncludeChangelog { get; set; }
+        [JsonPropertyName("changelog")]
+        public List<ChangelogEntry>? Changelog { get; set; }
+
+        public UserComment()
+        {
+            CommentId = Guid.NewGuid();
+        }
     }
 }

@@ -28,10 +28,17 @@ namespace Hyvemined.Core.Models.InternalApi
         [JsonPropertyName("severity")]
         public RiskSeverity Severity { get; set; } = RiskSeverity.None;
         [JsonPropertyName("linked_reports")]
-        public List<IocReportMetadata>? LinkedReports { get; set; } 
+        public List<IocReport>? LinkedReports { get; set; } 
         [JsonPropertyName("linked_correlations")]
-        public List<IocCorrelationMetadata>? LinkedCorrelations { get; set; }
-
+        public List<IocCorrelationResult>? LinkedCorrelations { get; set; }
+        [JsonPropertyName("include_comments")]
+        public bool IncludeComments { get; set; }
+        [JsonPropertyName("comments")]
+        public List<UserComment>? Comments { get; set; }
+        [JsonPropertyName("include_changelog")]
+        public bool IncludeChangelog { get; set; }
+        [JsonPropertyName("changelog")]
+        public List<ChangelogEntry>? Changelog { get; set; }
         public IocSummary()
         {
             SummaryId = Guid.NewGuid();
