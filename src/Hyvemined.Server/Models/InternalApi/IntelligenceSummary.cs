@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
-using Hyvemined.Core.Models.Enums;
+using Hyvemined.Server.Models.Enums;
 
-namespace Hyvemined.Core.Models.InternalApi
+namespace Hyvemined.Server.Models.InternalApi
 {
-    public class IocSummary
+    public class IntelligenceSummary
     {
         [JsonPropertyName("ioc")]
         public string Ioc { get; set; } = string.Empty;
@@ -26,20 +26,20 @@ namespace Hyvemined.Core.Models.InternalApi
         [JsonPropertyName("score")]
         public int Score { get; set; } = 0;
         [JsonPropertyName("severity")]
-        public RiskSeverity Severity { get; set; } = RiskSeverity.None;
+        public ThreatSeverity Severity { get; set; } = ThreatSeverity.None;
         [JsonPropertyName("linked_reports")]
-        public List<IocReport>? LinkedReports { get; set; } 
+        public List<IntelligenceReport>? LinkedReports { get; set; } 
         [JsonPropertyName("linked_correlations")]
-        public List<IocCorrelationResult>? LinkedCorrelations { get; set; }
+        public List<IntelligenceCorrelationResult>? LinkedCorrelations { get; set; }
         [JsonPropertyName("include_comments")]
-        public bool IncludeComments { get; set; }
+        public bool IncludeComments { get; set; } = false;
         [JsonPropertyName("comments")]
         public List<UserComment>? Comments { get; set; }
         [JsonPropertyName("include_changelog")]
-        public bool IncludeChangelog { get; set; }
+        public bool IncludeChangelog { get; set; } = false;
         [JsonPropertyName("changelog")]
         public List<ChangelogEntry>? Changelog { get; set; }
-        public IocSummary()
+        public IntelligenceSummary()
         {
             SummaryId = Guid.NewGuid();
         }

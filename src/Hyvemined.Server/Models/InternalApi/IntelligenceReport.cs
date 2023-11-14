@@ -1,11 +1,10 @@
-using Hyvemined.Core.Models.Enums;
-using Hyvemined.Core.Models.ExternalFeed;
-using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-namespace Hyvemined.Core.Models.InternalApi
+using Hyvemined.Server.Models.Enums;
+
+namespace Hyvemined.Server.Models.InternalApi
 {
-    public class IocReport
+    public class IntelligenceReport
     {
         [JsonPropertyName("report_id")]
         [JsonPropertyOrder(order: -4)]
@@ -32,17 +31,17 @@ namespace Hyvemined.Core.Models.InternalApi
         [JsonPropertyName("update_delta")]
         public TimeSpan UpdateDelta => DateTimeOffset.UtcNow - LastUpdated;
         [JsonPropertyName("extracted_fields")]
-        public List<IocReportField> ExtractedFields { get; set; } = new List<IocReportField>();
+        public List<IntelligenceReportField> ExtractedFields { get; set; } = new List<IntelligenceReportField>();
         [JsonPropertyName("computed_fields")]
-        public List<IocReportField> ComputedFields { get; set; } = new List<IocReportField>();
+        public List<IntelligenceReportField> ComputedFields { get; set; } = new List<IntelligenceReportField>();
         [JsonPropertyName("user_defined_fields")]
-        public List<IocReportField> UserDefinedFields { get; set; } = new List<IocReportField>();
+        public List<IntelligenceReportField> UserDefinedFields { get; set; } = new List<IntelligenceReportField>();
         [JsonPropertyName("include_comments")]
         public bool IncludeComments { get; set; } = false;
         [JsonPropertyName("comments")]
         public List<UserComment>? Comments { get; set; }
         [JsonPropertyName("include_changelog")]
-        public bool IncludeChangelog { get; set; }
+        public bool IncludeChangelog { get; set; } = false;
         [JsonPropertyName("changelog")]
         public List<ChangelogEntry>? Changelog { get; set; }
         [JsonPropertyName("include_raw_report")]
@@ -51,7 +50,7 @@ namespace Hyvemined.Core.Models.InternalApi
         public Dictionary<string, JsonElement>? RawReport { get; set; }
 
 
-        public IocReport()
+        public IntelligenceReport()
         {
             ReportId = Guid.NewGuid();
         }

@@ -1,4 +1,4 @@
-namespace Hyvemined.Core.Models.Enums
+namespace Hyvemined.CorrelationEngine.Models.Enums
 {
     public enum CorrelationActionType
     {

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyvemined.Core", "Hyvemined
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyvemined.Server", "Hyvemined.Server\Hyvemined.Server.csproj", "{9CE12267-253A-4E32-8933-1B01CDA96F61}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyvemined.CorrelationEngine", "Hyvemined.CorrelationEngine\Hyvemined.CorrelationEngine.csproj", "{C9F1A128-0035-41A5-A56F-37B8DD69F4F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{9CE12267-253A-4E32-8933-1B01CDA96F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE12267-253A-4E32-8933-1B01CDA96F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE12267-253A-4E32-8933-1B01CDA96F61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9F1A128-0035-41A5-A56F-37B8DD69F4F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9F1A128-0035-41A5-A56F-37B8DD69F4F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9F1A128-0035-41A5-A56F-37B8DD69F4F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9F1A128-0035-41A5-A56F-37B8DD69F4F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

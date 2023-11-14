@@ -1,4 +1,4 @@
-namespace Hyvemined.Core.Models.Enums
+namespace Hyvemined.Server.Models.Enums
 {
     public enum ReportType
     {

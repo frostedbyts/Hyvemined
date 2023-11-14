@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Hyvemined.Core.Models.InternalApi
+namespace Hyvemined.Server.Models.InternalApi
 {
     public class UserComment
     {

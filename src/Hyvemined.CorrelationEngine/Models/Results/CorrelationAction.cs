@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
-using Hyvemined.Core.Models.Enums;
+using Hyvemined.CorrelationEngine.Models.Enums;
 
-namespace Hyvemined.Core.Models.InternalApi
+namespace Hyvemined.CorrelationEngine.Models.Results
 {
-    public class IocCorrelationResultAction
+    public class CorrelationAction
     {
         [JsonPropertyName("action_type")]
         public CorrelationActionType ActionType { get; set; }

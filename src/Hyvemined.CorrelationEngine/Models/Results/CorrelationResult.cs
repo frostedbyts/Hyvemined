@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
-using Hyvemined.Core.Models.Enums;
+using Hyvemined.CorrelationEngine.Models.Enums;
 
-namespace Hyvemined.Core.Models.InternalApi
+namespace Hyvemined.CorrelationEngine.Models.Results
 {
-    public class IocCorrelationResult
+    public class CorrelationResult
     {
         [JsonPropertyName("correlation_result_id")]
         public Guid CorrelationResultId { get; set; }
@@ -20,7 +20,7 @@ namespace Hyvemined.Core.Models.InternalApi
         [JsonPropertyName("assigned_score")]
         public int AssignedScore { get; set; }
         [JsonPropertyName("assigned_risk")]
-        public RiskSeverity AssignedRisk { get; set; }
+        public ThreatSeverity AssignedRisk { get; set; }
         [JsonPropertyName("assigned_tags")]
         public List<string>? AssignedTags { get; set; }
         [JsonPropertyName("created")]
@@ -36,9 +36,9 @@ namespace Hyvemined.Core.Models.InternalApi
         [JsonPropertyName("last_run")]
         public DateTimeOffset LastRun { get; set; }
         [JsonPropertyName("actions")]
-        public List<IocCorrelationResultAction>? Actions { get; set; }
+        public List<CorrelationAction>? Actions { get; set; }
 
-        public IocCorrelationResult()
+        public CorrelationResult()
         {
             CorrelationResultId = Guid.NewGuid();
         }

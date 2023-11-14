@@ -1,8 +1,8 @@
 using System.Text.Json.Serialization;
-using Hyvemined.Core.Models.Enums;
-namespace Hyvemined.Core.Models.InternalApi
+
+namespace Hyvemined.Server.Models.InternalApi
 {
-    public class IocReportField
+    public class IntelligenceReportField
     {
         [JsonPropertyName("name")]
         public string? Name { get; set; }
