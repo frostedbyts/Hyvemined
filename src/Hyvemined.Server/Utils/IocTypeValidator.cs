@@ -1,12 +1,11 @@
 using System.Net;
-using System.Text.RegularExpressions;
-using System.Net.Sockets;
 using System.Net.Mail;
-using Hyvemined.Core.Models.Enums;
+using System.Net.Sockets;
+using System.Text.RegularExpressions;
+using Hyvemined.Server.Models.Enums;
 
-namespace Hyvemined.Core.Utils
+namespace Hyvemined.Server.Utils
 {
-    
     public static class IocTypeValidator
     {
         private static string MD5_REGEX = @"(?:[^a-fA-F\d]|\b)([a-fA-F\d]{32})(?:[^a-fA-F\d]|\b)";

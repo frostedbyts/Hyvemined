@@ -1,8 +1,7 @@
-using System.Buffers.Text;
 using System.IO.Compression;
 using System.Text;
 
-namespace Hyvemined.Core.Utils
+namespace Hyvemined.Server.Utils
 {
     public static class TextCompression
     {
