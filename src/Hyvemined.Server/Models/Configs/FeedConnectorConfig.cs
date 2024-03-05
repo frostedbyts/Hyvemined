@@ -114,6 +114,8 @@ namespace Hyvemined.Server.Models.Configs
     {
         public List<string>? TargetFields { get; set; }
 
+        public FunctionLanguage ComputeFunctionLang { get; set; }
+
         public string? ComputeFunction { get; set; }
 
         public string? OutputFieldName { get; set; }

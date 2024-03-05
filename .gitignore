@@ -479,3 +479,6 @@ $RECYCLE.BIN/
 # various configs
 *.[Pp][Rr][Oo][Dd][Uu][Cc][Tt][Ii][Oo][Nn].json
 *.[Dd][Ee][Vv][Ee][Ll][Oo][Pp][Mm][Ee][Nn][Tt].json
+
+# SQLite DBs
+hyvemined-*.db

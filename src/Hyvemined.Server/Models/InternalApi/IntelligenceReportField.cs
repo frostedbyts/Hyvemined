@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Hyvemined.Server.Models.Enums;
 
 namespace Hyvemined.Server.Models.InternalApi
 {
